@@ -1,0 +1,13 @@
+# Python / PyTorch / Hugging Face ignores
+*.pt
+*.bin
+*.safetensors
+.cache/
+
+# General Python environments (Optional but recommended)
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
